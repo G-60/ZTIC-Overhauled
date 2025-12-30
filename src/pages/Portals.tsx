@@ -11,23 +11,25 @@ function Portals() {
         <>
         <NavBar />
         <Title name="Portals" />
-        <div className="w-full h-100 flex justify-center items-center flex-wrap">
-            <div className="
-            border-2 border-orange-400 rounded-xl flex justify-center items-center p-2 w-40 h-40 shadow-md
-            hover:scale-102 hover:shadow-2xl transition-all m-5 bg-neutral-100 cursor-pointer hover:border-3
+        <div className="w-full h-100 flex justify-center items-center flex-wrap bg-neutral-100">
+            <a 
+            href="https://eservices.zu.edu.jo/tech_regist_gate/Login/loginPage"
+            target="_blank"
+            className="border-2 border-orange-400 rounded-xl flex justify-center items-center p-2 w-40 h-40 shadow-md
+            hover:scale-102 hover:shadow-2xl transition-all m-5 bg-white cursor-pointer hover:border-3
             ">
-                <h2 className="
-                text-md
-                ">Student Portal</h2>
-            </div>
-            <div className="
-            border-2 border-orange-400 rounded-xl flex justify-center items-center p-2 w-40 h-40 shadow-md
-            hover:scale-102 hover:shadow-2xl transition-all m-5 bg-neutral-100 cursor-pointer hover:border-3
-            ">
-                <h2 className="
-                text-md
-                ">Employee Portal</h2>
-            </div>
+                <p className="
+                text-md font-semibold"
+                >Student Portal</p>
+            </a>
+            <a 
+            href="https://eservices.zu.edu.jo/tech_emp/"
+            target="_blank"
+            className="border-2 border-orange-400 rounded-xl flex justify-center items-center p-2 w-40 h-40 shadow-md
+            hover:scale-102 hover:shadow-2xl transition-all m-5 bg-white cursor-pointer hover:border-3">
+                <p className="text-md font-semibold"
+                >Employee Portal</p>
+            </a>
             <div></div>
         </div>
         <Footer />

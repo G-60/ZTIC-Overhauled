@@ -22,7 +22,7 @@ export default function Members() {
             members="/Departments/Cybersecurity/Members"
             gplan="/Departments/Cybersecurity/Guide-Plan"
             />
-            <main className="w-full h-fit mb-10 bg-neutral-100">
+            <main className="w-full h-fit pb-10 bg-neutral-100">
                 <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 place-items-center gap-y-5 pt-8 mx-10">
                     <div className="col-span-full">
                     <Pcard
