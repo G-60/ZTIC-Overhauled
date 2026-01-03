@@ -23,7 +23,7 @@ export default function NavBar() {
                 <NavigationMenuItem>
                     <NavigationMenuLink>
                     <NavLink
-                    to="/Departments"
+                    to="/departments"
                     className={({ isActive }) => (isActive ? "rounded-full border-blue-500 bg-blue-800 w-fit text-center px-2" : "")}                    
                     >
                     Departments
@@ -33,7 +33,7 @@ export default function NavBar() {
                 <NavigationMenuItem>
                     <NavigationMenuLink>
                         <NavLink
-                        to="/Portals"
+                        to="/portals"
                         className={({ isActive }) => (isActive ? "rounded-full border-blue-500 bg-blue-800 w-fit text-center px-2" : "")}                    
                         >
                         Portals
@@ -43,7 +43,7 @@ export default function NavBar() {
                 <NavigationMenuItem>
                     <NavigationMenuLink>
                         <NavLink
-                        to="/Registration"
+                        to="/registration"
                         className={({ isActive }) => (isActive ? "rounded-full border-blue-500 bg-blue-800 w-fit text-center px-2" : "")}                    
                         >
                         Registration
@@ -53,7 +53,7 @@ export default function NavBar() {
                 <NavigationMenuItem>
                     <NavigationMenuLink>
                         <NavLink
-                        to="/About"
+                        to="/about"
                         className={({ isActive }) => (isActive ? "rounded-full border-blue-500 bg-blue-800 w-fit text-center px-2" : "")}                    
                         >
                         About

@@ -4,26 +4,27 @@ import Title from "@/components/Title"
 import Dnav from "@/components/DepNavbar"
 import Pcard from "@/components/ProfileCard"
 // members imgs
-import unknown from "@/assets/images/departmentimgs/depmembers/unknown.png"
-import omar from "@/assets/images/departmentimgs/depmembers/cyber/omar_tamimi.jpg"
+import omar from "@/assets/images/departmentimgs/depmembers/cyber/omartam.jpeg"
 import dena from "@/assets/images/departmentimgs/depmembers/cyber/dena_abulila.jpg"
+import rabee from "@/assets/images/departmentimgs/depmembers/cyber/rabee.jpeg"
 import eman from "@/assets/images/departmentimgs/depmembers/cyber/eman_alhanfi.png"
 import mayada from "@/assets/images/departmentimgs/depmembers/cyber/mayada.png"
-import ahmadk from "@/assets/images/departmentimgs/depmembers/cyber/ahmad_alkadi.jpeg"
-import ahmadq from "@/assets/images/departmentimgs/depmembers/cyber/ahmad_abedalqader.jpeg"
+import ahmadk from "@/assets/images/departmentimgs/depmembers/cyber/ahq.jpeg"
+import ahmadq from "@/assets/images/departmentimgs/depmembers/cyber/ahabd.jpeg"
+import wsn from "@/assets/images/departmentimgs/depmembers/cyber/wasan.jpeg"
 
 export default function Members() {
     return (
         <>
             <NavBar />
-            <Title name="Members" />
+            <Title name="Cybersecurity Members" />
             <Dnav
-            about="/Departments/Cybersecurity/About"
-            members="/Departments/Cybersecurity/Members"
-            gplan="/Departments/Cybersecurity/Guide-Plan"
+            about="/departments/cybersecurity/about"
+            members="/departments/cybersecurity/members"
+            gplan="/departments/cybersecurity/guide-plan"
             />
             <main className="w-full h-fit pb-10 bg-neutral-100">
-                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 place-items-center gap-y-5 pt-8 mx-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 place-items-center gap-5 gap-y-5 pt-8 mx-10">
                     <div className="col-span-full">
                     <Pcard
                     name="Dr. Omar Tamimi"
@@ -49,7 +50,7 @@ export default function Members() {
                     role="Teacher"
                     officeNo="S15"
                     edu="Master"
-                    img={unknown}
+                    img={rabee}
                     linkedin="" // fill later
                     email="rabeealquran@ztic.edu.jo"
                     />
@@ -91,7 +92,7 @@ export default function Members() {
                     role="Assistant"
                     officeNo="T62"
                     edu="Bachelors"
-                    img={unknown}
+                    img={wsn}
                     linkedin="/" // fill later
                     email="wnajar@ztic.edu.jo"
                     />

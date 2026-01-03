@@ -1,21 +1,18 @@
 import { useEffect } from 'react';
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardActions from '@mui/material/CardActions';
-import CardMedia from '@mui/material/CardMedia';
+import Title from '@/components/Title';
 
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+import Dcard from '@/components/DepartmentCards';
 
 // imgs
-import eng from '@/assets/images/departmentimgs/engineering.jpg'
-import fin from '@/assets/images/departmentimgs/financ.jpg'
-import media from '@/assets/images/departmentimgs/media.jpg'
-import it from '@/assets/images/departmentimgs/it.jpg'
-import logo from '@/assets/icons/ztic_logo.png'
-import { NavLink } from 'react-router';
+import arch from "@/assets/images/departmentimgs/architecture.jpg"
+import eng from "@/assets/images/departmentimgs/engineering.jpg"
+import nurse from "@/assets/images/departmentimgs/nurse.jpg"
+import it from "@/assets/images/departmentimgs/it.jpg"
+import fin from "@/assets/images/departmentimgs/financ.jpg"
+import arts from "@/assets/images/departmentimgs/media.jpg"
+import lang from "@/assets/images/departmentimgs/langs.jpg"
 
 export default function Departments() {
         useEffect(() => {
@@ -25,87 +22,62 @@ export default function Departments() {
     return (
         <>
         <NavBar />
-        <main className='w-full h-fit p-20'>
-            <div className='flex flex-col-reverse justify-center items-center gap-y-3 mb-5'>
-                <h1 className='text-3xl font-medium'>Departments</h1>
-                <img src={logo} alt="zitc logo" width={150} />
-            </div>
-            <div className='grid justify-center sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3'>
-            <Card sx={{ maxWidth: 250 }}>
-            <CardMedia className='hover:scale-105 transition-all'
-                sx={{ height: 150 }}
-                image={fin}
-                title="money image"
+        <Title name="Departments"/>
+        <main className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5 p-5 bg-neutral-100'>
+            <Dcard
+            dimg={arts}
+            dname="Applied Arts"
+            majors={[
+                { name: "Digital Media", path: "/departments/digital-media/about"},
+                { name: "Animation Arts", path: "/departments/animation-arts/about"}
+            ]}
             />
-            <CardContent>
-                <Typography gutterBottom textAlign={'center'} variant="h5" component="div">
-                Financial and Administrative Sciences
-                </Typography>
-            </CardContent>
-            <CardActions className='flex flex-col gap-2'>
-                <Button size="small">E-Business Management</Button>
-                <Button size="small">Technical Accounting</Button>
-                <Button size="small">Applied English Language</Button>
-                <Button size="small">Tax and Customs Sciences</Button>
-            </CardActions>
-            </Card>
-
-            <Card sx={{ maxWidth: 250 }}>
-            <CardMedia className='hover:scale-105 transition-all'
-                sx={{ height: 150 }}
-                image={eng}
-                title="machine image"
+            <Dcard
+            dimg={arch}
+            dname="Architecture"
+            majors={[
+                { name: "Architecture and Interior Design", path: "/departments/architecture/about" },
+            ]}
             />
-            <CardContent>
-                <Typography gutterBottom textAlign={'center'} variant="h5" component="div">
-                Engineering
-                </Typography>
-            </CardContent>
-            <CardActions className='flex flex-col gap-2'>
-                <Button size="small">Renewable Energy Technology</Button>
-                <Button size="small">Electric and Hybrid Vehicle Maintenance</Button>
-                <Button size="small">Architecture and Interior Design</Button>
-            </CardActions>
-            </Card>
-
-            <Card sx={{ maxWidth: 250 }}>
-            <CardMedia className='hover:scale-105 transition-all'
-                sx={{ height: 150 }}
-                image={media}
-                title="Camera image"
+            <Dcard
+            dimg={nurse}
+            dname="Associated Nursing"
+            majors={[
+                { name: "Associated Nursing", path: "/departments/associate-nursing/about" },
+            ]}
             />
-            <CardContent >
-                <Typography gutterBottom textAlign={'center'} variant="h5" component="div">
-                Applied Arts
-                </Typography>
-            </CardContent>
-            <CardActions className='flex flex-col gap-2'>
-                <Button size="small">Digital Media</Button>
-                <Button size="small">Animation Arts</Button>
-            </CardActions>
-            </Card>
-            
-            <Card sx={{ maxWidth: 250 }}>
-            <CardMedia className='hover:scale-105 transition-all'
-                sx={{ height: 150 }}
-                image={it}
-                title="javascript code"
+            <Dcard
+            dimg={eng}
+            dname="Engineering"
+            majors={[
+                { name: "Renewable Energy Technology", path: "/departments/engineering/renewable-energy-technology/about" },
+                { name: "Electric and Hybrid Vehicle Maintenance", path: "/departments/engineering/electric-and-Hybrid-vehicle-maintenance/about"}
+            ]}
             />
-            <CardContent>
-                <Typography gutterBottom textAlign={'center'} variant="h5" component="div">
-                Information Technology
-                </Typography>
-            </CardContent>
-            <CardActions className='flex flex-col gap-2'>
-                <Button size="small">Artificial Intelligence and Robotics Engineering</Button>
-                <Button size="small">
-                    <NavLink to="/Departments/Cybersecurity/About">
-                    Cyber Security
-                    </NavLink>
-                    </Button>
-            </CardActions>
-            </Card>
-            </div>
+            <Dcard
+            dimg={fin}
+            dname="Financial and Administrative Sciences"
+            majors={[
+                { name: "E-Business Management", path: "/departments/ebusiness/about" },
+                { name: "Technical Accounting", path: "/departments/accounting/about"},
+                { name: "Tax and Customs Sciences", path: "/departments/tax-and-customs-sciences/about"}
+            ]}
+            />
+            <Dcard
+            dimg={it}
+            dname="Information Technology"
+            majors={[
+                { name: "Artificial Intelligence and Robotics Engineering", path: "/departments/ai/about" },
+                { name: "Cyber Security", path: "/departments/cybersecurity/about"}
+            ]}
+            />
+            <Dcard
+            dimg={lang}
+            dname="Languages"
+            majors={[
+                { name: "Applied English Language", path: "/departments/applied-english/about"}
+            ]}
+            />
         </main>
         <Footer />
         </>

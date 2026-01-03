@@ -20,31 +20,31 @@ const router = createHashRouter([
     errorElement: <NotFound />,
   },
   {
-    path: "/Departments",
+    path: "/departments",
     element: <Departments />,
   },
   {
-    path: "/Gallery",
+    path: "/gallery",
     element: <Gallery />,
   },
   {
-    path: "/Portals",
+    path: "/portals",
     element: <Portals />,
   },
   {
-    path: "/About",
+    path: "/about",
     element: <About />,
   },
   {
-    path: "/Departments/Cybersecurity/About",
+    path: "/departments/cybersecurity/about",
     element: <Cyber />,
   },
   {
-    path: "/Departments/Cybersecurity/Members",
+    path: "/departments/cybersecurity/members",
     element: <Members />,
   },
   {
-    path: "/Departments/Cybersecurity/Guide-Plan",
+    path: "/departments/cybersecurity/guide-plan",
     element: <Gplan />,
   },
 ]);

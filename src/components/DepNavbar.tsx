@@ -11,7 +11,7 @@ export default function Dnav( {about, members, gplan} : routes) {
     }, []);
     return (
         <>
-        <nav className="flex justify-center pt-5 bg-neutral-100">
+        <nav className="flex justify-center pt-5 bg-neutral-100 px-5">
             <ul className="flex justify-evenly w-100 bg-neutral-200 rounded-2xl font-semibold">
                 <li
                 className="hover:bg-gray-300 p-2 rounded-full transition-all duration-300">
