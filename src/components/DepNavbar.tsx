@@ -1,4 +1,4 @@
-import { NavLink } from "react-router"
+import { NavLink } from "react-router-dom"
 import { useEffect } from "react"
 interface routes {
     about: string,

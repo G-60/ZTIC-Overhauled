@@ -28,8 +28,8 @@ export default function Departments() {
             dimg={arts}
             dname="Applied Arts"
             majors={[
-                { name: "Digital Media", path: "/departments/digital-media/about"},
-                { name: "Animation Arts", path: "/departments/animation-arts/about"}
+                { name: "Digital Media", path: "/departments/arts/digital-media/about"},
+                { name: "Animation Arts", path: "/departments/arts/animation-arts/about"}
             ]}
             />
             <Dcard
@@ -51,24 +51,24 @@ export default function Departments() {
             dname="Engineering"
             majors={[
                 { name: "Renewable Energy Technology", path: "/departments/engineering/renewable-energy-technology/about" },
-                { name: "Electric and Hybrid Vehicle Maintenance", path: "/departments/engineering/electric-and-Hybrid-vehicle-maintenance/about"}
+                { name: "Electric and Hybrid Vehicle Maintenance", path: "/departments/engineering/electric-and-hybrid-vehicle-maintenance/about"}
             ]}
             />
             <Dcard
             dimg={fin}
             dname="Financial and Administrative Sciences"
             majors={[
-                { name: "E-Business Management", path: "/departments/ebusiness/about" },
-                { name: "Technical Accounting", path: "/departments/accounting/about"},
-                { name: "Tax and Customs Sciences", path: "/departments/tax-and-customs-sciences/about"}
+                { name: "E-Business Management", path: "/departments/financial-and-administrative-sciences/ebusiness/about" },
+                { name: "Technical Accounting", path: "/departments/financial-and-administrative-sciences/accounting/about"},
+                { name: "Tax and Customs Sciences", path: "/departments/financial-and-administrative-sciences/tax-and-customs-sciences/about"}
             ]}
             />
             <Dcard
             dimg={it}
             dname="Information Technology"
             majors={[
-                { name: "Artificial Intelligence and Robotics Engineering", path: "/departments/ai/about" },
-                { name: "Cyber Security", path: "/departments/cybersecurity/about"}
+                { name: "Artificial Intelligence and Robotics Engineering", path: "/departments/it/ai/about" },
+                { name: "Cyber Security", path: "/departments/it/cybersecurity/about"}
             ]}
             />
             <Dcard

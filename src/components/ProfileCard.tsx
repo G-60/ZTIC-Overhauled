@@ -7,18 +7,16 @@ interface Info {
     edu: string,
     linkedin: string,
     email: string,
-    disabled?: boolean
 
 }
-export default function Pcard({ name, img, role, officeNo, edu, linkedin, email, disabled }: Info) {
-    const isLinkedinDisabled = !linkedin || disabled;
+export default function Pcard({ name, img, role, officeNo, edu, linkedin, email }: Info) {
     return (
         <>
             <div className="flex flex-col justify-between items-center h-155 border-2 w-90
-             border-gray-300 rounded shadow-md bg-neutral-50 hover:scale-101 hover:shadow-2xl
+             border-gray-300 rounded shadow-md bg-white hover:scale-101 hover:shadow-2xl
               hover:border-orange-400 transition-all duration-150">
                 <img src={img} alt={`${name}s photo`}
-                className="w-full h-1/2"
+                className="w-full h-1/2 border-b-3"
                 />
                 <h2
                 className="text-2xl font-semibold mt-5"
