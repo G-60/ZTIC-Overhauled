@@ -28,8 +28,8 @@ export default function Departments() {
             dimg={arts}
             dname="Applied Arts"
             majors={[
-                { name: "Digital Media", path: "/departments/arts/digital-media/about"},
-                { name: "Animation Arts", path: "/departments/arts/animation-arts/about"}
+                { name: "Digital Media", path: "/departments/applied-arts/digital-media/about"},
+                { name: "Animation Arts", path: "/departments/applied-arts/animation-arts/about"}
             ]}
             />
             <Dcard
