@@ -90,10 +90,17 @@ export default function Footer() {
                         className="hover:text-orange-400 text-orange-300 transition-all"
                         >0780020055</a>
                     </li>
+                    <li className="place-items-center-safe">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2883.9002446560557!2d36.1522090907262!3d32.057668731033885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151b6fc4d7bd242d%3A0x5d2c08ef4ad5ea94!2sZarqa%20Technical%20Intermediate%20College!5e1!3m2!1sen!2sjo!4v1767719857349!5m2!1sen!2sjo" 
+                        width="400" height="300"
+                        allowFullScreen
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"></iframe>
+                    </li>
                 </ul>
             </section>
             <section className="col-span-full bg-neutral-900 text-white text-center p-1">
-                <p className="text-sm">Copyright © 2025 ZTIC. All Rights Reserved</p>
+                <p className="text-sm">Copyright © 2026 ZTIC. All Rights Reserved</p>
             </section>
         </footer>
     )
