@@ -13,7 +13,7 @@ export default function About() {
             <Dnav
             about="/departments/associate-nursing/about"
             members="/departments/associate-nursing/members"
-            gplan="/departments/associate-nursing/guide-plan" />
+            plan="/departments/associate-nursing/plan" />
             <h1
                 className="p-3 border-l-2 border-orange-400 text-2xl ml-10 mt-10"
                 >About the Specialization</h1>

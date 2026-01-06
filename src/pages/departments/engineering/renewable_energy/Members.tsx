@@ -16,7 +16,7 @@ export default function Members() {
             <Dnav
             about="/departments/engineering/renewable-energy-technology/about"
             members="/departments/engineering/renewable-energy-technology/members"
-            gplan="/departments/engineering/renewable-energy-technology/guide-plan"
+            plan="/departments/engineering/renewable-energy-technology/plan"
             />
             <main className="
             grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 place-items-center gap-y-5

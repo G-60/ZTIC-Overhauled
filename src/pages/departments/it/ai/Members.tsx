@@ -18,7 +18,7 @@ export default function Members() {
             <Dnav
             about="/departments/it/ai/about"
             members="/departments/it/ai/members"
-            gplan="/departments/it/ai/guide-plan" />
+            plan="/departments/it/ai/plan" />
             <main className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 place-items-center gap-y-5
             w-full h-fit py-5 bg-neutral-100">
                 <div className="col-span-full">
@@ -34,7 +34,7 @@ export default function Members() {
                 </div>
                 <Pcard
                 name="Dr. Sajeda Alnwairan"
-                role="Teacher"
+                role="Lecturer"
                 officeNo="S17"
                 edu="Masters"
                 img={sajida}
@@ -43,7 +43,7 @@ export default function Members() {
                 />
                 <Pcard
                 name="Dr. Shrouq Ibrahim"
-                role="Teacher"
+                role="Lecturer"
                 officeNo="T62"
                 edu="Masters"
                 img={sajida}

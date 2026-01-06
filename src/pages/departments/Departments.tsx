@@ -36,14 +36,14 @@ export default function Departments() {
             dimg={arch}
             dname="Architecture"
             majors={[
-                { name: "Architecture and Interior Design", path: "/departments/architecture/about" },
+                { name: "Architecture and Interior Design", path: "/departments/architecture-and-interior-design/about" },
             ]}
             />
             <Dcard
             dimg={nurse}
-            dname="Associated Nursing"
+            dname="Associate Nursing"
             majors={[
-                { name: "Associated Nursing", path: "/departments/associate-nursing/about" },
+                { name: "Associate Nursing", path: "/departments/associate-nursing/about" },
             ]}
             />
             <Dcard

@@ -21,7 +21,7 @@ export default function Members() {
             <Dnav
             about="/departments/it/cybersecurity/about"
             members="/departments/it/cybersecurity/members"
-            gplan="/departments/it/cybersecurity/guide-plan"
+            plan="/departments/it/cybersecurity/plan"
             />
             <main className="
             grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 place-items-center gap-y-5
@@ -39,7 +39,7 @@ export default function Members() {
                 </div>
                 <Pcard
                 name="Dr. Dena Abu Laila"
-                role="Teacher"
+                role="Lecturer"
                 officeNo="S17"
                 edu="Masters"
                 img={dena}
@@ -48,7 +48,7 @@ export default function Members() {
                 />
                 <Pcard
                 name="Dr. Rabee Al-Quran"
-                role="Teacher"
+                role="Lecturer"
                 officeNo="S15"
                 edu="Masters"
                 img={rabee}

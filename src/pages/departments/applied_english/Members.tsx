@@ -20,7 +20,7 @@ export default function members() {
             <Dnav
             about="/departments/applied-english/about"
             members="/departments/applied-english/members"
-            gplan="/departments/applied-english/guide-plan"
+            plan="/departments/applied-english/plan"
             />
             <main className="
             grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 place-items-center gap-y-5
@@ -39,7 +39,7 @@ export default function members() {
                 <Pcard
                 name="Dr. Kareem Sweileh"
                 img={kareem}
-                role="Teacher"
+                role="Lecturer"
                 edu="Masters"
                 officeNo="T64"
                 linkedin="https://www.linkedin.com/in/kareem-sweileh-2b757a88/"

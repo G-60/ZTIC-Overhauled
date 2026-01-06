@@ -12,7 +12,7 @@ export default function About() {
             <Dnav
             about="/departments/applied-english/about"
             members="/departments/applied-english/members"
-            gplan="/departments/applied-english/guide-plan"
+            plan="/departments/applied-english/plan"
             />
             <div className="bg-neutral-100 pt-10">
             <h1

@@ -12,7 +12,7 @@ export default function About() {
                 <Dnav
                 about="/departments/engineering/electric-and-hybrid-vehicle-maintenance/about"
                 members="/departments/engineering/electric-and-hybrid-vehicle-maintenance/members"
-                gplan="/departments/engineering/electric-and-hybrid-vehicle-maintenance/guide-plan"
+                plan="/departments/engineering/electric-and-hybrid-vehicle-maintenance/plan"
                 />
                 <div>
                     <h1

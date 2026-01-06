@@ -13,7 +13,7 @@ export default function about() {
             <Dnav
             about="/departments/applied-arts/digital-media/about"
             members="/departments/applied-arts/digital-media/members"
-            gplan="/departments/applied-arts/digital-media/guide-plan"
+            plan="/departments/applied-arts/digital-media/plan"
             />
             <h1
                 className="p-3 border-l-2 border-orange-400 text-2xl ml-10 mt-10"

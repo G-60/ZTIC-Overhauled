@@ -3,9 +3,9 @@ import { useEffect } from "react"
 interface routes {
     about: string,
     members: string,
-    gplan: string
+    plan: string
 }
-export default function Dnav( {about, members, gplan} : routes) {
+export default function Dnav( {about, members, plan} : routes) {
     useEffect(() => {
     window.scrollTo({top: 0, behavior: "smooth"});
     }, []);
@@ -27,9 +27,9 @@ export default function Dnav( {about, members, gplan} : routes) {
                     </NavLink>
                 </li>
                 <li className="hover:bg-gray-300 p-2 rounded-full transition-all duration-300">
-                    <NavLink to={gplan}
+                    <NavLink to={plan}
                     className={({ isActive }) => (isActive ? "border-b-2 border-gray-500 px-2" : "")}>
-                    Guide Plan
+                    Study Plan
                     </NavLink>
                 </li>
             </ul>

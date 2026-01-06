@@ -19,7 +19,7 @@ export default function Members() {
             <Dnav
             about="/departments/engineering/electric-and-hybrid-vehicle-maintenance/about"
             members="/departments/engineering/electric-and-hybrid-vehicle-maintenance/members"
-            gplan="/departments/engineering/electric-and-hybrid-vehicle-maintenance/guide-plan"
+            plan="/departments/engineering/electric-and-hybrid-vehicle-maintenance/plan"
             />
             <main className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 place-items-center gap-y-5
             w-full h-fit py-5 bg-neutral-100">

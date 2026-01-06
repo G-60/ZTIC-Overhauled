@@ -8,11 +8,11 @@ export default function About() {
         <>
             <NavBar />
                 <main className="w-full h-fit bg-neutral-100">
-                <Title name="Cybersecurity" />
+                <Title name="Renewable Energy Technology" />
                 <Dnav
                 about="/departments/engineering/renewable-energy-technology/about"
                 members="/departments/engineering/renewable-energy-technology/members"
-                gplan="/departments/engineering/renewable-energy-technology/guide-plan"
+                plan="/departments/engineering/renewable-energy-technology/plan"
                 />
                 <div>
                 <h1

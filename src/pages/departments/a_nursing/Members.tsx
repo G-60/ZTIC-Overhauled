@@ -15,7 +15,7 @@ export default function Members() {
             <Dnav
             about="/departments/associate-nursing/about"
             members="/departments/associate-nursing/members"
-            gplan="/departments/associate-nursing/guide-plan" />
+            plan="/departments/associate-nursing/plan" />
             <main className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 place-items-center gap-y-5
             w-full h-fit py-5 bg-neutral-100">
                 <div className="col-span-full">

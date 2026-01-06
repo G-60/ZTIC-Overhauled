@@ -2,21 +2,20 @@ import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import Title from "@/components/Title";
 import Dnav from "@/components/DepNavbar";
-import GplanDownloader from "@/components/GuidePlanDownloader";
-
-import gimg from "@/assets/images/departmentimgs/guide_plans/cybersecurity.png"
-export default function Gplan() {
+import MajorDescriptionDownloader from "@/components/MajorDescDownloader";
+import plan from "@/assets/pdfs/detailed_description/cybersecurity.pdf"
+export default function Plan() {
     return (
         <>
             <NavBar />
             <Title 
-            name="Cybersecurity Guide Plan" />
+            name="Cybersecurity Study Plan" />
             <Dnav
             about="/departments/it/cybersecurity/about"
             members="/departments/it/cybersecurity/members"
-            gplan="/departments/it/cybersecurity/guide-plan" />
-            <GplanDownloader 
-            gimg={gimg}
+            plan="/departments/it/cybersecurity/plan" />
+            <MajorDescriptionDownloader 
+            descpdf={plan}
             />
             <Footer />
         </>

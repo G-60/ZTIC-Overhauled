@@ -19,7 +19,7 @@ export default function members() {
             <Dnav
             about="/departments/applied-arts/digital-media/about"
             members="/departments/applied-arts/digital-media/members"
-            gplan="/departments/applied-arts/digital-media/guide-plan"
+            plan="/departments/applied-arts/digital-media/plan"
             />
             <main className="
             grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 place-items-center gap-y-5
@@ -38,7 +38,7 @@ export default function members() {
                 <Pcard
                 name="Dr. Ahmad Alshirah"
                 img={ahmadalshirah}
-                role="Teacher"
+                role="Lecturer"
                 officeNo="T67"
                 edu="Masters"
                 linkedin=""
@@ -47,11 +47,29 @@ export default function members() {
                 <Pcard
                 name="Dr. Ahmad Alqudah"
                 img={AhmadAlqudah}
-                role="Teacher"
+                role="Lecturer"
                 officeNo="T66"
                 edu="Masters"
                 linkedin=""
                 email="aalqudah@ztic.edu.jo"
+                />
+                <Pcard
+                name="Dr. Sadeq Abdel Rahman"
+                img={AhmadAlqudah}
+                role="Assistant"
+                officeNo="T25"
+                edu="Bachelors"
+                linkedin="https://www.linkedin.com/in/sadeq-abdel-rahman-10437a22b/"
+                email="sabdelrahman@ztic.edu.jo"
+                />
+                <Pcard
+                name="Dr. Yousef Alamir"
+                img={yousef}
+                role="Assistant"
+                officeNo="S205"
+                edu="Bachelors"
+                linkedin=""
+                email="yalamir@ztic.edu.jo"
                 />
                 <Pcard
                 name="Dr. Motasem Al Daour"
@@ -63,13 +81,22 @@ export default function members() {
                 email="maldaour@ztic.edu.jo"
                 />
                 <Pcard
-                name="Dr. Yousef Alamir"
-                img={yousef}
+                name="Dr. Amal Al Tous"
+                img={AhmadAlqudah}
                 role="Assistant"
-                officeNo="S205"
+                officeNo="T75"
                 edu="Bachelors"
                 linkedin=""
-                email="yalamir@ztic.edu.jo"
+                email="aaltous@ztic.edu.jo"
+                />
+                <Pcard
+                name="Dr. Bayan Albakheet"
+                img={ahmadalshirah}
+                role="Assistant"
+                officeNo="T61"
+                edu="Bachelors"
+                linkedin=""
+                email="baalbakheet@ztic.edu.jo"
                 />
             </main>
             <Footer />

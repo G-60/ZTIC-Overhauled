@@ -12,7 +12,7 @@ export default function About() {
                 <Dnav
                 about="/departments/it/cybersecurity/about"
                 members="/departments/it/cybersecurity/members"
-                gplan="/departments/it/cybersecurity/guide-plan"
+                plan="/departments/it/cybersecurity/plan"
                 />
                 <div>
                 <h1
