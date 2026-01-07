@@ -63,7 +63,7 @@ import CyberPlan from "./pages/departments/it/cybersecurity/Plan";
 import NotFound from "./pages/NotFound";
 import Gallery from "./pages/Gallery";
 import Portals from "./pages/Portals";
-import About from "./pages/about/About";
+import About from "./pages/About";
 
 const router = createHashRouter([
   // navbar
