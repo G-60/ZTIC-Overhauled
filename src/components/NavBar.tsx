@@ -8,7 +8,7 @@ import {
 import { NavLink } from "react-router-dom";
 export default function NavBar() {
     return (
-        <NavigationMenu>
+        <NavigationMenu className='hidden sm:inline-block'>
             <NavigationMenuList>
                 <NavigationMenuItem>
                     <NavigationMenuLink>
