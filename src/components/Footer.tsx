@@ -1,7 +1,11 @@
-import { Link } from "react-router"
+import { Link } from "react-router-dom"
 import facebook from "@/assets/icons/facebook.svg"
 import instagram from "@/assets/icons/instagram.svg"
+import { useEffect } from "react";
 export default function Footer() {
+    useEffect(() => {
+    window.scrollTo({top: 0, behavior: "smooth"});
+    }, []);
     return (
         <footer className="bg-linear-to-b from-blue-800 via-blue-900 to-blue-950 text-neutral-50 w-full grid grid-cols-1 gap-y-10 gap-x-5 sm:grid-cols-2 md:grid-cols-3">
             <section className="m-8">
@@ -26,16 +30,14 @@ export default function Footer() {
                         </a>
                     </li>
                     <li>
-                        <a href="https://ztic.edu.jo/index.php/en/admission-and-registration/specializations-and-fees"
-                        className="hover:underline underline-offset-2 decoration-orange-400 transition-all">
-                        Specializations and Fees
-                        </a>
+                        <Link to="/registration"
+                        className="hover:underline underline-offset-2 decoration-orange-400 transition-all"
+                        >Registration & Fees</Link>
                     </li>
                     <li>
-                        <a href="https://ztic.edu.jo/index.php/en/admission-and-registration/incentive-discounts"
-                        className="hover:underline underline-offset-2 decoration-orange-400 transition-all">
-                            Incentive Discounts
-                        </a>
+                        <Link to="/registration#discounts"
+                        className="hover:underline underline-offset-2 decoration-orange-400 transition-all"
+                        >Incentive Discounts</Link>
                     </li>
                 </ul>
             </section>
