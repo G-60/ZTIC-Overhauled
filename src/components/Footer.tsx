@@ -1,7 +1,6 @@
 import { Link } from "react-router"
 import facebook from "@/assets/icons/facebook.svg"
 import instagram from "@/assets/icons/instagram.svg"
-import ac from "@/assets/pdfs/calender-compressed.pdf"
 export default function Footer() {
     return (
         <footer className="bg-linear-to-b from-blue-800 via-blue-900 to-blue-950 text-neutral-50 w-full grid grid-cols-1 gap-y-10 gap-x-5 sm:grid-cols-2 md:grid-cols-3">
@@ -93,7 +92,7 @@ export default function Footer() {
                     <li className="place-items-center-safe">
                             <iframe 
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2883.9002446560557!2d36.1522090907262!3d32.057668731033885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151b6fc4d7bd242d%3A0x5d2c08ef4ad5ea94!2sZarqa%20Technical%20Intermediate%20College!5e1!3m2!1sen!2sjo!4v1767719857349!5m2!1sen!2sjo" 
-                            className="w-1/2 px-10 rounded-full"
+                            className="w-1/2 px-10"
                             allowFullScreen
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"></iframe>

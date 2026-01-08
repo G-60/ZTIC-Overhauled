@@ -1,7 +1,10 @@
 import { createHashRouter, RouterProvider } from "react-router-dom";
-
+// navbar
 import Home from "./pages/Home";
 import Departments from "./pages/departments/Departments";
+import Portals from "./pages/Portals";
+import Registration from "./pages/Registration";
+import About from "./pages/About";
 
 // digital media pages
 import DigitalMediaAbout from "@/pages/departments/arts/digital_media/About"
@@ -55,15 +58,13 @@ import TaxPlan from "@/pages/departments/financial_and_administrative_sciences/t
 import AiAbout from "@/pages/departments/it/ai/About"
 import AiMembers from "@/pages/departments/it/ai/Members"
 import AiPlan from "@/pages/departments/it/ai/Plan"
-// Cybersecurity pages
+// Cybersecurity
 import CyberAbout from "./pages/departments/it/cybersecurity/About";
 import CyberMembers from "./pages/departments/it/cybersecurity/Members";
 import CyberPlan from "./pages/departments/it/cybersecurity/Plan";
-
+// other
 import NotFound from "./pages/NotFound";
 import Gallery from "./pages/Gallery";
-import Portals from "./pages/Portals";
-import About from "./pages/About";
 
 const router = createHashRouter([
   // navbar
@@ -87,6 +88,10 @@ const router = createHashRouter([
   {
     path: "/about",
     element: <About />,
+  },
+  {
+    path: "/registration",
+    element: <Registration />
   },
   // departments
   // digital media

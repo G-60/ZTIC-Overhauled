@@ -4,7 +4,12 @@ import Title from "@/components/Title"
 import GlareHover from "@/components/GlareHover"
 import zabooutimg from "@/assets/images/ztic_about.jpeg"
 import ghida from "@/assets/images/ghida.jpg"
+import { useEffect } from "react"
 export default function About() {
+    useEffect(() => {
+    window.scrollTo({top: 0, behavior: "smooth"});
+    }, []);
+
     return (
         <>
         <NavBar />
@@ -35,7 +40,7 @@ export default function About() {
                         to the growing local and regional labor market demand for these types of majors.
                     </p>
                     <img src={zabooutimg} alt="ztic building" 
-                    className="border-2 border-orange-400 rounded-4xl" />
+                    className="border-2 border-orange-400 rounded-4xl hover:scale-102 transition-all" />
                 </section>
                 <section className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-20 mx-5 sm:mx-10">
                     <div>
@@ -43,13 +48,13 @@ export default function About() {
                         className="text-3xl p-3 border-l-3 border-orange-400 font-medium"
                         >Vision and Mission</h2>
                         <h3
-                        className="text-2xl p-3 mt-5 border-l-3 border-orange-400"
+                        className="text-2xl pl-3 mt-5 border-l-3 border-orange-400"
                         >Vision</h3>
                         <p className="mt-5">
                             Leadership in providing technical education to serve the local, regional and international community.
                         </p>
                         <h3
-                        className="text-2xl p-3 mt-5 border-l-3 border-orange-400"
+                        className="text-2xl pl-3 mt-5 border-l-3 border-orange-400"
                         >Mission</h3>
                         <p className="mt-5">
                             Building a distinguished technical generation capable 
