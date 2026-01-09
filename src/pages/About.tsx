@@ -80,16 +80,14 @@ export default function About() {
                         >
                             <img src={ghida}
                             alt="Ghaida Abu Rumman image" 
-                            className="w-100 h-100 object-cover rounded-full"
+                            className="w-100 h-100 object-cover rounded-full cursor-default"
                             />
                             </GlareHover>
                             <figcaption className="text-center text-neutral-600 mt-3">Dr. Ghaida Abu Rumman<br/>College Dean</figcaption>
-                        </figure>
-                        
+                        </figure> 
                     </div>
                 </section>
                 <section>
-
                 </section>
         </main>
         <Footer />

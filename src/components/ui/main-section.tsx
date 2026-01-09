@@ -1,4 +1,5 @@
 import Stack from '../Stack'
+import { Link } from 'react-router-dom'
 import {
   Card,
   CardContent,
@@ -54,6 +55,13 @@ export default function Main() {
                         the intermediate university degree, and includes within it an elite group of faculty members
                         with high experience and distinguished competence capable
                         of keeping pace with rapid scientific development in all fields on the practical or technological level.</p>
+                        <Link to="/about"
+                        className='ml-10 mt-5 py-2 px-4 inline-block border border-orange-400 rounded-sm
+                        hover:bg-orange-400 hover:text-white transition-all duration-150 ease-in
+                        '
+                        >
+                        Read More
+                        </Link>
                     </div>
                     <div className="col-span-full sm:col-span-1 my-10 sm:my-0 z-10 hover:scale-103 transition-all">
                     <Stack
