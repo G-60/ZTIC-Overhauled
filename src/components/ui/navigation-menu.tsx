@@ -49,7 +49,7 @@ function NavigationMenuItem({
   return (
     <NavigationMenuPrimitive.Item
       data-slot="navigation-menu-item"
-      className={cn("relative border-transparent border-b-3 hover:border-blue-600 hover:translate-y-1 mx-2 sm:mx-2 p-0.5 transition-all", className)}
+      className={cn("relative border-transparent border-b-3 hover:border-blue-600 hover:translate-y-1 mx-2 sm:mx-2 p-1.5 transition-all", className)}
       {...props}
     />
   )
@@ -76,27 +76,9 @@ function NavigationMenuViewport({
     </div>
   )
 }
-
-function NavigationMenuLink({
-  className,
-  ...props
-}: React.ComponentProps<typeof NavigationMenuPrimitive.Link>) {
-  return (
-    <NavigationMenuPrimitive.Link
-      data-slot="navigation-menu-link"
-      className={cn(
-        "data-[active=true]:focus:bg-accent data-[active=true]:hover:bg-accent data-[active=true]:bg-accent/50 data-[active=true]:text-accent-foreground focus-visible:ring-ring/50 [&_svg:not([class*='text-'])]:text-muted-foreground flex flex-col gap-1 sm:px-3 sm:py-1 text-sm sm:text-base transition-all focus-visible:ring-[3px] focus-visible:outline-1 [&_svg:not([class*='size-'])]:size-4",
-        className
-      )}
-      {...props}
-    />
-  )
-}
-
 export {
   NavigationMenu,
   NavigationMenuList,
   NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuViewport,
 }

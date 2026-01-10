@@ -14,7 +14,7 @@ function Header() {
                             Failed to load video, try refreshing
                         </video>
                     </figure>
-                      <div className="absolute inset-0 w-full h-screen bg-black/35 pointer-events-none"></div>
+                      <div className="absolute sm:inset-0 w-full h-screen bg-black/35 pointer-events-none"></div>
                       <div className="absolute bottom-5">
                         <AnimatedContent>
                         <figure className="flex flex-col place-items-center">
