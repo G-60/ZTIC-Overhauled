@@ -71,7 +71,7 @@ const router = createHashRouter([
   {
     path: "/",
     element: <Home />,
-    errorElement: <NotFound />,
+    errorElement: <NotFound />
   },
   {
     path: "/departments",

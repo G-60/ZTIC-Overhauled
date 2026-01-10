@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import NavBar from "@/components/NavBar"
 import Footer from "@/components/Footer"
 import Title from "@/components/Title"
+import AnimatedContent from "@/components/AnimatedContent";
 function Portals() {
         useEffect(() => {
         window.scrollTo({top: 0, behavior: "smooth"});
@@ -11,7 +12,8 @@ function Portals() {
         <>
         <NavBar />
         <Title name="Portals" />
-        <div className="w-full h-100 flex justify-center items-center flex-wrap bg-neutral-100">
+        <AnimatedContent>
+        <main className="w-full h-100 flex justify-center items-center flex-wrap bg-neutral-100">
             <a 
             href="https://eservices.zu.edu.jo/tech_regist_gate/Login/loginPage"
             target="_blank"
@@ -31,7 +33,8 @@ function Portals() {
                 >Employee Portal</p>
             </a>
             <div></div>
-        </div>
+        </main>
+        </AnimatedContent>
         <Footer />
         </>
     )

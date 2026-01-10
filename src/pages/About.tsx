@@ -5,6 +5,7 @@ import GlareHover from "@/components/GlareHover"
 import zabooutimg from "@/assets/images/ztic_about.jpeg"
 import ghida from "@/assets/images/ghida.jpg"
 import { useEffect } from "react"
+import AnimatedContent from "@/components/AnimatedContent"
 export default function About() {
     useEffect(() => {
     window.scrollTo({top: 0, behavior: "smooth"});
@@ -16,6 +17,7 @@ export default function About() {
         <main className="w-full h-fit pb-5 bg-neutral-100">
             <Title
             name="About the College" />
+            <AnimatedContent>
                 <section className="flex flex-wrap justify-center gap-y-5 mt-15 mx-5 sm:mx-10">
                     <h2
                     className="text-3xl p-3 border-l-3 border-orange-400 w-full font-medium"
@@ -87,8 +89,7 @@ export default function About() {
                         </figure> 
                     </div>
                 </section>
-                <section>
-                </section>
+            </AnimatedContent>
         </main>
         <Footer />
         </>

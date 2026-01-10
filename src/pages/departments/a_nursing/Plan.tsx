@@ -4,6 +4,7 @@ import Title from "@/components/Title"
 import Dnav from "@/components/DepNavbar"
 import MajorDescriptionDownloader from "@/components/MajorDescDownloader"
 import plan from "@/assets/pdfs/detailed_description/a_nursing.pdf"
+import AnimatedContent from "@/components/AnimatedContent"
 
 export default function Plan() {
     return (
@@ -15,8 +16,10 @@ export default function Plan() {
             about="/departments/associate-nursing/about"
             members="/departments/associate-nursing/members"
             plan="/departments/associate-nursing/plan" />
-            <MajorDescriptionDownloader
-            descpdf={plan} />
+            <AnimatedContent>
+                <MajorDescriptionDownloader
+                descpdf={plan} />
+            </AnimatedContent>
             <Footer />
         </>
     )

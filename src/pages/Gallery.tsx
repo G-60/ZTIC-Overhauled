@@ -2,6 +2,7 @@ import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import CircularGallery from "@/components/CircularGallery";
 import { useEffect } from "react";
+import AnimatedContent from "@/components/AnimatedContent";
 
 
 export default function Gallery() {
@@ -13,10 +14,12 @@ export default function Gallery() {
         <>
             <NavBar />
             <div className="w-full h-screen bg-neutral-100">
-                <CircularGallery
-                bend={2}
-                scrollEase={0.09}
-                />
+                <AnimatedContent>
+                    <CircularGallery
+                    bend={2}
+                    scrollEase={0.09}
+                    />
+                </AnimatedContent>
             </div>
             <Footer />
         </>

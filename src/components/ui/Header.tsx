@@ -1,6 +1,7 @@
 import NavBar from "../NavBar"
 import video from "@/assets/videos/ztic_video.mp4"
 import logo from "@/assets/icons/ztic_logo.png"
+import AnimatedContent from "../AnimatedContent"
 function Header() {
     return (
         <header>
@@ -15,11 +16,13 @@ function Header() {
                     </figure>
                       <div className="absolute inset-0 w-full h-screen bg-black/35 pointer-events-none"></div>
                       <div className="absolute bottom-5">
+                        <AnimatedContent>
                         <figure className="flex flex-col place-items-center">
                             <img src={logo} alt="zarqa technical intermediate college logo"
                             className="w-35 sm:w-45 md:w-50" />
                             <figcaption className="text-base sm:text-xl text-neutral-50 font-bold text-shadow-black text-shadow-2xs">Zarqa Technical Intermediate College</figcaption>
                         </figure>
+                        </AnimatedContent>
                       </div>
                 </div>
             </header>

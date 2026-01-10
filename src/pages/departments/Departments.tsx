@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import AnimatedContent from '@/components/AnimatedContent';
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import Title from '@/components/Title';
@@ -23,6 +24,7 @@ export default function Departments() {
         <>
         <NavBar />
         <Title name="Departments"/>
+        <AnimatedContent>
         <main className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5 p-5 bg-neutral-100'>
             <Dcard
             dimg={arts}
@@ -79,6 +81,7 @@ export default function Departments() {
             ]}
             />
         </main>
+        </AnimatedContent>
         <Footer />
         </>
     )

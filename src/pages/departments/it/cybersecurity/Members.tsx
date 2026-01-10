@@ -12,6 +12,7 @@ import mayada from "@/assets/images/departmentimgs/depmembers/cyber/mayada.png"
 import ahmadk from "@/assets/images/departmentimgs/depmembers/cyber/ahq.jpeg"
 import ahmadq from "@/assets/images/departmentimgs/depmembers/cyber/ahabd.jpeg"
 import wsn from "@/assets/images/departmentimgs/depmembers/cyber/wasan.jpeg"
+import AnimatedContent from "@/components/AnimatedContent"
 
 export default function Members() {
     return (
@@ -23,81 +24,83 @@ export default function Members() {
             members="/departments/it/cybersecurity/members"
             plan="/departments/it/cybersecurity/plan"
             />
-            <main className="
-            grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 place-items-center gap-y-5
-            w-full h-fit py-5 bg-neutral-100">
-                <div className="col-span-full">
-                <Pcard
-                name="Dr. Omar Tamimi"
-                role="Department Head"
-                officeNo="S126"
-                edu="Masters"
-                img={omar}
-                linkedin="https://www.linkedin.com/in/omar-ahmad-3087b2220/"
-                email="oaltamimi@ztic.edu.jo"
-                />
-                </div>
-                <Pcard
-                name="Dr. Dena Abu Laila"
-                role="Lecturer"
-                officeNo="S17"
-                edu="Masters"
-                img={dena}
-                linkedin="https://www.linkedin.com/in/dena-abulaila-6549aa187/"
-                email="dabulaila@ztic.edu.jo"
-                />
-                <Pcard
-                name="Dr. Rabee Al-Quran"
-                role="Lecturer"
-                officeNo="S15"
-                edu="Masters"
-                img={rabee}
-                linkedin=""
-                email="rabeealquran@ztic.edu.jo"
-                />
-                <Pcard
-                name="Dr. Mayyadah Ghatashe"
-                role="Assistant"
-                officeNo="S17"
-                edu="Bachelors"
-                img={mayada}
-                linkedin=""
-                email="mghatashe@ztic.edu.jo"
-                />
-                <Pcard
-                name="Dr. Eman Alhanafi"
-                role="Assistant"
-                officeNo="T75"
-                edu="Bachelors"
-                img={eman}
-                linkedin="https://www.linkedin.com/in/eman-alhanafi-0b3026278/"
-                email="ealhanafi@ztic.edu.jo"
-                /><Pcard
-                name="Dr. Ahmad Abedalqader"
-                role="Assistant"
-                officeNo="Z10"
-                edu="Bachelors"
-                img={ahmadq}
-                linkedin="https://www.linkedin.com/in/ahmadjabalii/"
-                email="aabedalqader@ztic.edu.jo"
-                /><Pcard
-                name="Dr. Ahmad Alkadi"
-                role="Assistant"
-                officeNo="T63"
-                edu="Bachelors"
-                img={ahmadk}
-                linkedin="https://www.linkedin.com/in/ahmad-alkadi/"
-                email="aalkadi@ztic.edu.jo"
-                /><Pcard
-                name="Dr. Wasan Al-Najar"
-                role="Assistant"
-                officeNo="T62"
-                edu="Bachelors"
-                img={wsn}
-                linkedin=""
-                email="wnajar@ztic.edu.jo"
-                />
-            </main>
+            <AnimatedContent>
+                <main className="
+                grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 place-items-center gap-y-5
+                w-full h-fit py-5 bg-neutral-100">
+                    <div className="col-span-full">
+                    <Pcard
+                    name="Dr. Omar Tamimi"
+                    role="Department Head"
+                    officeNo="S126"
+                    edu="Masters"
+                    img={omar}
+                    linkedin="https://www.linkedin.com/in/omar-ahmad-3087b2220/"
+                    email="oaltamimi@ztic.edu.jo"
+                    />
+                    </div>
+                    <Pcard
+                    name="Dr. Dena Abu Laila"
+                    role="Lecturer"
+                    officeNo="S17"
+                    edu="Masters"
+                    img={dena}
+                    linkedin="https://www.linkedin.com/in/dena-abulaila-6549aa187/"
+                    email="dabulaila@ztic.edu.jo"
+                    />
+                    <Pcard
+                    name="Dr. Rabee Al-Quran"
+                    role="Lecturer"
+                    officeNo="S15"
+                    edu="Masters"
+                    img={rabee}
+                    linkedin=""
+                    email="rabeealquran@ztic.edu.jo"
+                    />
+                    <Pcard
+                    name="Dr. Mayyadah Ghatashe"
+                    role="Assistant"
+                    officeNo="S17"
+                    edu="Bachelors"
+                    img={mayada}
+                    linkedin=""
+                    email="mghatashe@ztic.edu.jo"
+                    />
+                    <Pcard
+                    name="Dr. Eman Alhanafi"
+                    role="Assistant"
+                    officeNo="T75"
+                    edu="Bachelors"
+                    img={eman}
+                    linkedin="https://www.linkedin.com/in/eman-alhanafi-0b3026278/"
+                    email="ealhanafi@ztic.edu.jo"
+                    /><Pcard
+                    name="Dr. Ahmad Abedalqader"
+                    role="Assistant"
+                    officeNo="Z10"
+                    edu="Bachelors"
+                    img={ahmadq}
+                    linkedin="https://www.linkedin.com/in/ahmadjabalii/"
+                    email="aabedalqader@ztic.edu.jo"
+                    /><Pcard
+                    name="Dr. Ahmad Alkadi"
+                    role="Assistant"
+                    officeNo="T63"
+                    edu="Bachelors"
+                    img={ahmadk}
+                    linkedin="https://www.linkedin.com/in/ahmad-alkadi/"
+                    email="aalkadi@ztic.edu.jo"
+                    /><Pcard
+                    name="Dr. Wasan Al-Najar"
+                    role="Assistant"
+                    officeNo="T62"
+                    edu="Bachelors"
+                    img={wsn}
+                    linkedin=""
+                    email="wnajar@ztic.edu.jo"
+                    />
+                </main>
+            </AnimatedContent>
             <Footer />
         </>
     )

@@ -8,6 +8,7 @@ import moalhaj from "@/assets/images/departmentimgs/depmembers/accounting/mohamm
 import saleh from "@/assets/images/departmentimgs/depmembers/tax_and_customs_sciences/saleh.jpeg"
 import amal from "@/assets/images/departmentimgs/depmembers/tax_and_customs_sciences/amal.png"
 import moaljrah from "@/assets/images/departmentimgs/depmembers/tax_and_customs_sciences/moaljrah.png"
+import AnimatedContent from "@/components/AnimatedContent";
 export default function Members() {
     return (
         <>
@@ -18,47 +19,49 @@ export default function Members() {
             about="/departments/financial-and-administrative-sciences/tax-and-customs/about"
             members="/departments/financial-and-administrative-sciences/tax-and-customs-sciences/members"
             plan="/departments/financial-and-administrative-sciences/tax-and-customs-sciences/plan" />
-            <main className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 place-items-center gap-y-5
-            w-full h-fit py-5 bg-neutral-100">
-                <div className="col-span-full">
+            <AnimatedContent>
+                <main className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 place-items-center gap-y-5
+                w-full h-fit py-5 bg-neutral-100">
+                    <div className="col-span-full">
+                        <Pcard
+                        name="Dr. Mohammad Alhaj"
+                        role="Department Head"
+                        officeNo="T74"
+                        edu="Masters"
+                        img={moalhaj}
+                        linkedin=""
+                        email="malhaj@ztic.edu.jo"
+                        />
+                    </div>
                     <Pcard
-                    name="Dr. Mohammad Alhaj"
-                    role="Department Head"
-                    officeNo="T74"
-                    edu="Masters"
-                    img={moalhaj}
+                    name="Dr. Saleh Al-Zorqan"
+                    role="Associate Lecturer"
+                    officeNo="S127"
+                    edu="PhD"
+                    img={saleh}
                     linkedin=""
-                    email="malhaj@ztic.edu.jo"
+                    email="salzorqan@ztic.edu.jo"
                     />
-                </div>
-                <Pcard
-                name="Dr. Saleh Al-Zorqan"
-                role="Associate Lecturer"
-                officeNo="S127"
-                edu="PhD"
-                img={saleh}
-                linkedin=""
-                email="salzorqan@ztic.edu.jo"
-                />
-                <Pcard
-                name="Dr. Amal Aburahmeh"
-                role="Lecturer"
-                officeNo="T68"
-                edu="Masters"
-                img={amal}
-                linkedin=""
-                email="aaburahmah@ztic.edu.jo"
-                />
-                <Pcard
-                name="Dr. Mohammad Al-Jarrah"
-                role="Assistant"
-                officeNo="T63"
-                edu="Bachelors"
-                img={moaljrah}
-                linkedin=""
-                email="mjarrah@ztic.edu.jo"
-                />
-            </main>
+                    <Pcard
+                    name="Dr. Amal Aburahmeh"
+                    role="Lecturer"
+                    officeNo="T68"
+                    edu="Masters"
+                    img={amal}
+                    linkedin=""
+                    email="aaburahmah@ztic.edu.jo"
+                    />
+                    <Pcard
+                    name="Dr. Mohammad Al-Jarrah"
+                    role="Assistant"
+                    officeNo="T63"
+                    edu="Bachelors"
+                    img={moaljrah}
+                    linkedin=""
+                    email="mjarrah@ztic.edu.jo"
+                    />
+                </main>
+            </AnimatedContent>
             <Footer />
         </>
     )

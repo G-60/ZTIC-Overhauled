@@ -4,6 +4,7 @@ import Dnav from "@/components/DepNavbar";
 import Title from "@/components/Title";
 import MajorDescription from "@/components/MajorDescDownloader";
 import plan from "@/assets/pdfs/detailed_description/animation.pdf"
+import AnimatedContent from "@/components/AnimatedContent";
 
 export default function Plan() {
     return (
@@ -16,9 +17,11 @@ export default function Plan() {
             members="/departments/applied-arts/animation-arts/members"
             plan="/departments/applied-arts/animation-arts/plan"
             />
-            <MajorDescription
-            descpdf={plan}
-            />
+            <AnimatedContent>
+                <MajorDescription
+                descpdf={plan}
+                />
+            </AnimatedContent>
             <Footer />
         </>
     )
