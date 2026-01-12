@@ -96,7 +96,7 @@ export default function Members() {
                     officeNo="T62"
                     edu="Bachelors"
                     img={wsn}
-                    linkedin=""
+                    linkedin="http://linkedin.com/in/wasan-najar-a5303a243/"
                     email="wnajar@ztic.edu.jo"
                     />
                 </main>
