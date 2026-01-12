@@ -14,7 +14,9 @@ export default function Gallery() {
         <>
             <NavBar />
             <div className="w-full h-screen bg-neutral-100">
-                <AnimatedContent>
+                <AnimatedContent
+                className="inline"
+                >
                     <CircularGallery
                     bend={2}
                     scrollEase={0.09}
